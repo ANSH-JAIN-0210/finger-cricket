@@ -35,7 +35,7 @@ const FingerCricketGame = () => {
     if (userBatting) {
       
       if (num === aiNum) {
-        setMessage("You're OUT! Now AI will bat.");
+        setMessage("You're OUT! Now Computer will bat.");
         setUserBatting(false);
       } else {
         setUserScore(userScore + num);
@@ -44,7 +44,7 @@ const FingerCricketGame = () => {
     } else {
       
       if (num === aiNum) {
-        setMessage(`AI is OUT! ${userScore > aiScore ? "You Win!" : userScore === aiScore ? "It's a Tie!" : "AI Wins!"}`);
+        setMessage(`Computer is OUT! ${userScore > aiScore ? "You Win!" : userScore === aiScore ? "It's a Tie!" : "Computer Wins!"}`);
         setGameOver(true);
       } else {
         setAiScore(aiScore + aiNum);
@@ -80,8 +80,8 @@ const FingerCricketGame = () => {
             <img src={images[userChoice - 1]} alt={`You chose ${userChoice}`} />
           </div>
           <div>
-            <p>AI Choice:</p>
-            <img src={images[aiChoice - 1]} alt={`AI chose ${aiChoice}`} />
+            <p>Computer Choice:</p>
+            <img src={images[aiChoice - 1]} alt={`Computer chose ${aiChoice}`} />
           </div>
         </div>
       )}
