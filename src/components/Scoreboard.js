@@ -5,7 +5,7 @@ const Scoreboard = ({ userScore, aiScore }) => {
   return (
     <div className="scoreboard">
       <p>Your Score: <b>{userScore}</b></p>
-      <p>AI Score: <b>{aiScore}</b></p>
+      <p>Computer Score: <b>{aiScore}</b></p>
     </div>
   );
 };
